@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen & Paula's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background Styling */
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: #ffffff;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        /* Background Blur Image */
+        body::before {
+            content: "";
+            background-image: url('/mnt/data/single-firework-burst-in-sky.webp'); /* Path to the uploaded image */
+            background-size: cover;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.2;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+        /* Container for Content */
+        .content {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        /* Header Styling */
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        header p {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3em;
+            color: #ffffff;
+            margin-bottom: 60px;
+            font-weight: 300;
+        }
+
+        /* Section Styling */
+        .section {
+            background-color: rgba(255, 255, 255, 0.05); /* Soft gray background to distinguish sections */
+            border: 1px solid rgba(255, 255, 255, 0.15); /* Light gray border for subtle separation */
+            border-radius: 8px;
+            padding: 30px 20px;
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5em;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+        .section p {
+            font-size: 1.1em;
+            color: #ffffff;
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 10px 5px;
+            color: #ffffff;
+            background-color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+
+    <header>
+        <h1>Stephen & Paula</h1>
+        <p>Saturday, March 15, 2025</p>
+    </header>
+
+    <section class="section" id="ceremony">
+        <h2>Ceremony & Reception</h2>
+        <p>The Farrier, 89 Main St. Cayton, Scarborough, YO11 3RP</p>
+    </section>
+
+    <section class="section" id="schedule">
+        <p><strong>3:30 PM</strong> - Welcome Drinks & Photos</p>
+        <p><strong>3:50 PM</strong> - Take your seats</p>
+        <p><em>Pick a seat either side, please leave the front row free for the wedding party.</em></p>
+        <p><strong>4:00 PM</strong> - Ceremony Begins</p>
+        <p><strong>12:00 AM</strong> - Carriages at Midnight</p>
+        <p><em>Respectfully, an Adult Only occasion.</em></p>
+    </section>
+
+    <section class="section" id="info">
+        <div>
+            <a href="#rsvp" class="btn">RSVP</a>
+            <a href="#venue" class="btn">Venue Information</a>
+            <a href="#dresscode" class="btn">Dress Code</a>
+            <a href="#honeymoon" class="btn">Honeymoon Fund</a>
+            <a href="#seating" class="btn">Restaurant Seating</a>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
