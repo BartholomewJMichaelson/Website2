@@ -6,5 +6,5 @@ This is a simple wedding website to provide event details for Stephen & Paula's 
 ## Files in this Repository
 
 - `index.html` - Main webpage with wedding details
-- `single-firework-burst-in-sky.webp` - Placeholder for the background image
+- `venue-image` - Image for the venue
 - `.gitignore` - Basic gitignore file to avoid committing unnecessary files
