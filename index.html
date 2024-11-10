@@ -17,30 +17,12 @@
         body {
             font-family: 'Raleway', sans-serif;
             color: #ffffff;
-            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('venue-image.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #000;
             display: flex;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
             padding: 40px 20px;
-        }
-
-        /* Background Blur Image */
-        body::before {
-            content: "";
-            background-image: url('/mnt/data/single-firework-burst-in-sky.webp');
-            background-size: cover;
-            background-position: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            opacity: 0.2;
-            filter: blur(10px);
-            z-index: -1;
         }
 
         /* Container for Content */
@@ -69,8 +51,8 @@
 
         /* Section Styling */
         .section {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background-color: rgba(255, 255, 255, 0.05); /* Soft gray background to distinguish sections */
+            border: 1px solid rgba(255, 255, 255, 0.15); /* Light gray border for subtle separation */
             border-radius: 8px;
             padding: 30px 20px;
             margin-bottom: 40px;
@@ -89,10 +71,10 @@
             line-height: 1.6;
         }
 
-        /* Venue Image */
-        .venue-image {
-            max-width: 400px;
-            margin-left: 20px;
+        /* Image Styling */
+        #ceremony img {
+            width: 100%; /* Make the image the same size as the box */
+            height: auto;
             border-radius: 8px;
         }
 
@@ -112,12 +94,6 @@
         .btn:hover {
             background-color: #555;
         }
-
-        /* Layout adjustments */
-        .content-wrapper {
-            display: flex;
-            justify-content: space-between;
-        }
     </style>
 </head>
 <body>
@@ -129,21 +105,20 @@
         <p>Saturday, March 15, 2025</p>
     </header>
 
-    <div class="content-wrapper">
-        <section class="section" id="schedule">
-            <h2>Ceremony & Reception</h2>
-            <p>The Farrier, 89 Main St. Cayton, Scarborough, YO11 3RP</p>
+    <section class="section" id="ceremony">
+        <h2>Ceremony & Reception</h2>
+        <img src="single-firework-burst-in-sky.webp" alt="Fireworks">
+        <p>The Farrier, 89 Main St. Cayton, Scarborough, YO11 3RP</p>
+    </section>
 
-            <p><strong>3:30 PM</strong> - Welcome Drinks & Photos</p>
-            <p><strong>3:50 PM</strong> - Take your seats</p>
-            <p><em>Pick a seat either side, please leave the front row free for the wedding party.</em></p>
-            <p><strong>4:00 PM</strong> - Ceremony Begins</p>
-            <p><strong>12:00 AM</strong> - Carriages at Midnight</p>
-            <p><em>Respectfully, an Adult Only occasion.</em></p>
-        </section>
-
-        <img src="venue-image.jpg" alt="The Farrier Venue" class="venue-image">
-    </div>
+    <section class="section" id="schedule">
+        <p><strong>3:30 PM</strong> - Welcome Drinks & Photos</p>
+        <p><strong>3:50 PM</strong> - Take your seats</p>
+        <p><em>Pick a seat either side, please leave the front row free for the wedding party.</em></p>
+        <p><strong>4:00 PM</strong> - Ceremony Begins</p>
+        <p><strong>12:00 AM</strong> - Carriages at Midnight</p>
+        <p><em>Respectfully, an Adult Only occasion.</em></p>
+    </section>
 
     <section class="section" id="info">
         <div>
