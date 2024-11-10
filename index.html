@@ -56,6 +56,7 @@
             border-radius: 8px;
             padding: 30px 20px;
             margin-bottom: 40px;
+            position: relative; /* Allow image to be positioned within the section */
         }
         .section h2 {
             font-family: 'Playfair Display', serif;
@@ -71,11 +72,16 @@
             line-height: 1.6;
         }
 
-        /* Image Styling */
-        #ceremony img {
-            width: 100%; /* Make the image the same size as the box */
-            height: auto;
+        /* Venue Image Styling */
+        #venue-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fills the section and maintains its aspect ratio */
+            position: absolute;
+            top: 0;
+            left: 0;
             border-radius: 8px;
+            z-index: -1; /* Ensures the image stays in the background */
         }
 
         /* Button Styling */
@@ -107,8 +113,14 @@
 
     <section class="section" id="ceremony">
         <h2>Ceremony & Reception</h2>
-        <img src="single-firework-burst-in-sky.webp" alt="Fireworks">
         <p>The Farrier, 89 Main St. Cayton, Scarborough, YO11 3RP</p>
+    </section>
+
+    <!-- Venue Image Section -->
+    <section class="section" id="venue">
+        <h2>Venue</h2>
+        <img id="venue-image" src="single-firework-burst-in-sky.webp" alt="Fireworks at venue">
+        <p>Address: 89 Main St. Cayton, Scarborough, YO11 3RP</p>
     </section>
 
     <section class="section" id="schedule">
@@ -116,21 +128,4 @@
         <p><strong>3:50 PM</strong> - Take your seats</p>
         <p><em>Pick a seat either side, please leave the front row free for the wedding party.</em></p>
         <p><strong>4:00 PM</strong> - Ceremony Begins</p>
-        <p><strong>12:00 AM</strong> - Carriages at Midnight</p>
-        <p><em>Respectfully, an Adult Only occasion.</em></p>
-    </section>
-
-    <section class="section" id="info">
-        <div>
-            <a href="#rsvp" class="btn">RSVP</a>
-            <a href="#venue" class="btn">Venue Information</a>
-            <a href="#dresscode" class="btn">Dress Code</a>
-            <a href="#honeymoon" class="btn">Honeymoon Fund</a>
-            <a href="#seating" class="btn">Restaurant Seating</a>
-        </div>
-    </section>
-
-</div>
-
-</body>
-</html>
+        <p><strong>12:00 AM</strong> - Carriages at Mi
